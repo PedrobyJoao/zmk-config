@@ -36,16 +36,18 @@
 
     combos {
         compatible = "zmk,combos";
-        // Combo to enter bootloader mode (Top-Left + Bottom-Left keys)
+
+        // Bootloader: Press all 6 thumb keys and Q
         combo_bootloader {
             timeout-ms = <50>;
-            key-positions = <0 15>;
+            key-positions = <0 30 31 32 33 34 35>;
             bindings = <&bootloader>;
         };
-        // Combo to reset the keyboard (Top-Right + Bottom-Right keys)
+
+        // Reset: Press all 6 thumb keys and R
         combo_reset {
             timeout-ms = <50>;
-            key-positions = <14 29>;
+            key-positions = <3 30 31 32 33 34 35>;
             bindings = <&sys_reset>;
         };
     };
