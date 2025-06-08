@@ -60,7 +60,7 @@
 &kp Q       &kp W       &hm LALT E    &hm LCTL R    &kp T         &kp Y       &hm RCTL U    &hm RALT I    &kp O       &kp P
 &hm LSHFT A &kp S       &kp D         &kp F         &kp G         &kp H       &kp J         &kp K         &kp L       &hm RSHFT SEMI
 &kp Z       &kp X       &kp C         &kp V         &kp B         &kp N       &kp M         &kp COMMA     &kp DOT     &kp SLASH
-                                    &lt_nav_tab NAV TAB &kp BSPC      &kp LGUI      &mo SYM       &kp RET       &kp SPACE
+                                    &lt_nav_tab NAV TAB &kp BSPC  &kp LGUI    &mo SYM       &kp RET       &kp SPACE
             >;
         };
 
@@ -75,10 +75,10 @@
 
         nav_layer {
             bindings = <
-&kp ESC    &kp PG_UP  &kp UP        &kp PG_DN     &trans        &trans       &trans        &trans        &trans     &trans
+&kp ESC    &kp PG_UP  &kp UP        &kp PG_DN     &trans        &trans       &trans        &trans        &trans       &trans
 &kp END    &kp LEFT   &kp DOWN      &kp RIGHT     &trans        &trans       &trans        &kp C_BRI_DN  &kp C_BRI_UP &trans
-&trans     &trans     &trans        &trans        &trans        &trans       &trans        &trans        &trans     &trans
-                                    &trans        &trans        &trans       &mo FUNC      &trans        &trans
+&trans     &trans     &trans        &trans        &trans        &trans       &trans        &trans        &trans       &trans
+                                    &trans        &trans        &mo FUNC     &trans        &trans        &trans
             >;
         };
 
