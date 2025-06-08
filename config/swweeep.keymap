@@ -8,6 +8,7 @@
 #define NAV     2
 #define FUNC    3
 
+
 / {
     // Custom behaviors to fine-tune hold-tap settings for specific use cases.
     // `hm` uses 'tap-preferred' for home row mods, and `lt_nav_tab` is isolated for independent thumb key tuning.
