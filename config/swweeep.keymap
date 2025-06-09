@@ -48,24 +48,23 @@
     combos {
         compatible = "zmk,combos";
 
-        // Bootloader: Press all 6 thumb keys and Q
+        // Bootloader: q,w,e, 1 left thumb key and all right thumb keys 
         combo_bootloader {
             timeout-ms = <50>;
-            key-positions = <0 30 31 32 33 34 35>;
+            key-positions = <0 1 2 32 33 34 35>;
             bindings = <&bootloader>;
         };
 
-        // Reset: Press all 6 thumb keys and R
+        // Reset: same as above but without w and e
         combo_reset {
             timeout-ms = <50>;
-            key-positions = <3 30 31 32 33 34 35>;
+            key-positions = <0 32 33 34 35>;
             bindings = <&sys_reset>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
-        // TODO: combos simpler
         // TODO: solve esc too fast and Super + Q
 
         default_layer {
