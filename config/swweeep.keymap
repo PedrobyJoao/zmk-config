@@ -33,7 +33,9 @@
             flavor = "hold-preferred";
             bindings = <&mo>, <&kp>;
         };
+
     };
+
 
     combos {
         compatible = "zmk,combos";
@@ -79,7 +81,7 @@
 &kp ESC    &kp PG_UP  &kp UP        &kp PG_DN     &trans        &trans       &trans        &trans        &trans       &trans
 &kp END    &kp LEFT   &kp DOWN      &kp RIGHT     &trans        &trans       &trans        &kp C_BRI_DN  &kp C_BRI_UP &trans
 &trans     &trans     &trans        &trans        &trans        &trans       &trans        &trans        &trans       &trans
-                                    &trans        &trans        &mo FUNC     &trans        &trans        &trans
+                                    &trans        &trans        &trans       &trans        &trans        &mo FUNC
             >;
         };
 
