@@ -66,14 +66,13 @@
     keymap {
         compatible = "zmk,keymap";
         // TODO: combos simpler
-        // TODO: maybe ctrl and alt on the pinkies
         // TODO: solve esc too fast and Super + Q
 
         default_layer {
             bindings = <
-&tdESC      &kp W       &hm LCTL E    &hm LALT R    &kp T         &kp Y       &hm RCTL U    &hm RALT I    &kp O       &kp P
-&hm LSHFT A &kp S       &kp D         &kp F         &kp G         &kp H       &kp J         &kp K         &kp L       &hm RSHFT SEMI
-&kp Z       &kp X       &kp C         &kp V         &kp B         &kp N       &kp M         &kp COMMA     &kp DOT     &kp SLASH
+&tdESC      &kp W         &kp E       &kp R         &kp T         &kp Y       &kp U         &kp I         &kp O        &kp P
+&hm LSHFT A &kp S         &kp D       &kp F         &kp G         &kp H       &kp J         &kp K         &kp L        &hm RSHFT SEMI
+&hm LCTL Z  &hm LALT X    &kp C       &kp V         &kp B         &kp N       &kp M         &kp COMMA     &hm RALT DOT &hm RCTL SLASH
                                     &lt_nav_tab NAV TAB &kp LGUI  &kp SPACE   &kp BSPC      &kp RET       &mo SYM
             >;
         };
