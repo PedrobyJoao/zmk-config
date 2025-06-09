@@ -1,4 +1,6 @@
-/web https://zmk.dev/docs/keymaps/behaviors https://zmk.dev/docs/keymaps
+/web https://zmk.dev/docs/keymaps/behaviors
+/web https://zmk.dev/docs/keymaps
+/web https://zmk.dev/docs/keymaps/behaviors/tap-dance
 
 I need you to help to create my swweeep keymap based on my necessities.
 
