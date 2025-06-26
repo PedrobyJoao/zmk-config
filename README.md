@@ -1,11 +1,13 @@
 Configs for **Sweep36** or **Swweeep**, a 36-keys split keyboard.
 
-read https://www.reddit.com/r/ErgoMechKeyboards/comments/r2qrm2/what_do_you_prefer_layers_or_combos/
-
 **Caution**: syntax errors, e.g.: using non-existent fields, might result in unexpected behavior such
 as halves not connecting to each other.
 
 ## TODOs
 
+- [ ] mouse setup!!
+- [ ] Tab as combo (not on thumbs)
+- [ ] Easier access for Symbols layer
+- [ ] fix bluetooth random disconnect after some time
 - [ ] pinkies are kinda hard of triggering the key press (is this because
       of strenght or my keyboard?)
