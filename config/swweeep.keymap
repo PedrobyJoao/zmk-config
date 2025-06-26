@@ -4,8 +4,6 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <input/processors.dtsi>
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 50       // default: 10
-
 // Layer Defines
 #define DEFAULT 0
 #define SYM     1
@@ -15,6 +13,32 @@
 #define M_FAST  5
 #define M_XFAST 6
 
+
+&msc {
+    time-to-max-speed-ms = <180>;
+    acceleration-exponent = <2>;
+};
+
+&mmv_input_listener {
+    set_mouse_xfast { 
+        layers = <M_XFAST>;
+        input-processors = <&zip_xy_scaler 4 1>;
+    };
+};
+
+&mmv_input_listener {
+    set_mouse_fast { 
+        layers = <M_FAST>;
+        input-processors = <&zip_xy_scaler 2 1>;
+    };
+};
+
+&mmv_input_listener {
+    set_mouse_slow { 
+        layers = <M_SLOW>;
+        input-processors = <&zip_xy_scaler 1 2>;
+    };
+};
 
 / {
     // Custom behaviors to fine-tune hold-tap settings for specific use cases.
@@ -42,27 +66,6 @@
         };
 
     };
-
-    &msc {
-        time-to-max-speed-ms = <180>;
-        acceleration-exponent = <2>;
-    };
-
-    &mmv_input_listener {
-        set_mouse_xfast {
-            layers = <M_XFAST>;
-            input-processors = <&zip_xy_scaler 4 1>;
-        };
-        set_mouse_fast {
-            layers = <M_FAST>;
-            input-processors = <&zip_xy_scaler 2 1>;
-        };
-        set_mouse_slow {
-            layers = <M_SLOW>;
-            input-processors = <&zip_xy_scaler 1 2>;
-        };
-    };
-
 
     combos {
         compatible = "zmk,combos";
