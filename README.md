@@ -5,7 +5,6 @@ as halves not connecting to each other.
 
 ## TODOs
 
-- [ ] mouse setup!!
 - [ ] Tab as combo (not on thumbs)
 - [ ] Easier access for Symbols layer
 - [ ] fix bluetooth random disconnect after some time
