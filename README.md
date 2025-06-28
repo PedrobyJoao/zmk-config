@@ -5,8 +5,8 @@ as halves not connecting to each other.
 
 ## TODOs
 
-- [ ] Tab as combo (not on thumbs)
 - [ ] Easier access for Symbols layer
+- [ ] Safer access to sys keys: with a combo that activates a layer for a period of time
 - [ ] fix bluetooth random disconnect after some time
 - [ ] pinkies are kinda hard of triggering the key press (is this because
       of strenght or my keyboard?)

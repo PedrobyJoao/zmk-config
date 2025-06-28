@@ -83,6 +83,13 @@
             key-positions = <0 32 33 34 35>;
             bindings = <&sys_reset>;
         };
+
+        // Tab: `e` and `r`
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&kp TAB>;
+        };
     };
 
     keymap {
